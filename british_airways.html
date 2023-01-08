@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Relevant Courses and Ceritificates.</title>
+  <title>British Airways Project</title>
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -75,34 +75,20 @@
           <i class="fa fa-bars"></i>
         </span>
         <div class="w3-container" id="About">
-          <h1>Relevant Courses and Certificates</h1>
+          <h1>British Airways</h1>
+          <h3>Analysis and Predictions on customers' satisfaction</h3>
           <div class="w3-section w3-bottombar w3-padding-16"></div>
         </div>
       </header>
       
-      <div class="w3-card-4">
-
-        <header class="w3-container w3-light-grey">
-          <a href="https://www.udemy.com/certificate/UC-0af5b309-5266-42a0-ba6e-047d48545337/"> <h3>Complete Machine Learning & Data Science Bootcamp 2022</h3></a>
-        </header>
-        
+      <div class="w3-card-4">        
         <div class="w3-container">
-          <p>Zero to Mastery Academy</p>
+          <p>This project is part of British Airways Virtual Experience, on the website The Forage. </p>
           <hr>
           <!--<img src="Images/lapo-udemy-course.jpg" class="w3-left w3-margin-rightn w3-border" style="max-width: 25%;">-->
             <!--<div class="w3-card w3-padding">-->
-              <p>This course was a real in depth experience in Data Science and Machine Learning. It covers many topics and granted me a good experience with several hands-on projects. After 43 hours of video lectures the course covered a lot of topics such as:</p>
-            <ul>
-              <li>Deep Learning, Transfer Learning and Neural Networks using Tensorflow 2.0 </li>
-              <li>Phyton Programming</li>
-              <li>Developer Environment setup for Data Science and Machine Learning</li>
-              <li>Machine Learning on Time Series data</li>
-              <li>Explore large datasets using Pandas, Matplotlib and Seaborn</li>
-              <li>NumPy for Machine Learning</li>
-              <li>Scikit-learn library</li>
-              <li>Classification and Regression modelling </li>
-              <li>Transfer Learning Applications</li>
-            </ul>
+              <p></p>
+          
           <!--</div> -->
         </div>
       </div>
@@ -110,58 +96,67 @@
       <div class="w3-card-4">
 
         <header class="w3-container w3-light-grey">
-          <a href="https://www.coursera.org/account/accomplishments/certificate/XJU9DCWTR2PN"> <h3>SQL for Data Science</h3></a>
+            <h3>The Experience</h3></a>
         </header>
         
         <div class="w3-container">
-          <p>Coursera - UC Davis</p>
+          <p>During this program, we are asked to perform some Data Scientist’s job: build a reviews dataset and perform some analysis over it, and after that we are asked to perform some predictive analysis over a booking dataset to understand which are the main features that contributes to customers’ choice. </p>
           <hr>
           <!--<img src="Images/lapo-udemy-course.jpg" class="w3-left w3-margin-rightn w3-border" style="max-width: 25%;">-->
             <!--<div class="w3-card w3-padding">-->
-              <p>This was a crush in SQL for Data Science that provided in depth usage of SQL for data science and data analysis. The video lessons covered the following topics:</p>
-            <ul>
-              <li>What is SQL</li>
-              <li>Data Modeling and reletional database architecture.</li>
-              <li>ER Diagram</li>
-              <li>Retriving data from tables</li>
-              <li>Creating tables and temporary tables</li>
-              <li>Filtering, Sorting, and Ordering data</li>
-              <li>Subqueries and Joins in SQL</li>
-              <li>Text data and Date-Time data </li>
-              <li>Create Views</li>
-              <li>Data Governance and Profiling</li>
-            </ul>
+              <p></p>
+          
           <!--</div> -->
         </div>
       </div>
+
       
       <div class="w3-card-4">
 
         <header class="w3-container w3-light-grey">
-          <h3>Machine Learning</h3>
+            <h3>Steps</h3></a>
         </header>
         
         <div class="w3-container">
-          <p>Coursera - Stanford University (Andrew Ng)</p>
-          <hr>
-          <!--<img src="Images/lapo-udemy-course.jpg" class="w3-left w3-margin-rightn w3-border" style="max-width: 25%;">-->
-            <!--<div class="w3-card w3-padding">-->
-              <p> During the vido lectures provided by Andrew Ng, this course teach me the foundamental algorithms giving me a mathematical point of view of machine learning problems, such regression, classification, clustering, and neural netwrorks.</p>
-              <p>Main topics of this course:</p>
-            <ul>
-              <li>Supervised and Unsupervised Learning </li>
-              <li>Linear Regression</li>
-              <li>Logistic Regression</li>
-              <li>Neural Networks</li>
-              <li>Binary Classification</li>
-              <li>Multiclass Classification</li>
-              <li>Large Scale Machine Learning</li>
-              <li>Photo OCR </li>
-              <li>Matlab/Octave Fundamentals for Machine Learning</li>
-            </ul>
+           <ul>
+            <li>To analyse customers’ sentiment after a flight with British Airways we must build a dataset taking data directly from internet, specifically from (insert site here):</li>
+            <ol>
+              <li>After inspected the website, we began our notebook using ‘request’ and ‘BeautifulSoup’ to grab and inspect reviews data from HTML pages. </li>
+              <li>Then we built two datasets: the first with reviews text, the second one with customers’ impressions about the flight.</li>
+              <li>At the end of the task, we performed a rapid analysis over these two datasets: we searched for the most used words in negative reviews, and…</li>
+            </ol>
+
+            <li>The second task was focussed on predictive analysis: we were asked to train a model on a dataset of 50000 examples of booking process, to understand which features are more important for a customer to purchase a flight:</li>
+             <ol>
+              <li>The dataset was given by British Airways and had no missing data in it, but many features was in a string format, so we needed to encode them. After checked dataset info, we decided to encode our features using Pandas categories. </li>
+              <li>After this pre-processing, we analysed the dataset to understand data distribution, especially labels distribution. We noticed that this distribution was extremely skewed.</li>
+              <li>We tried to build and train a ‘RandomForestClassifier’, but as we expected the estimator was very inaccurate and prone to biases. </li>
+              <li>To avoid this kind of problem we tried oversampling to balance the number of positive and negative samples, and after this operation our model performed quite well on our dataset.</li>
+             </ol>
+           </ul>
+          
           <!--</div> -->
         </div>
+
+        <div class = "w3-card-4">
+          <header class = "w3-container w3-light-grey">
+            <h4 >What we have found</h4>
+          </header>
+
+          <div class = "w3-container">
+            <p>During the first part of the project we have found that most reviews are negative, as shown in the graph below.</p>
+            <img src = "Images\Projects\British Airways\yes_vs_no.png" style = "max-width: 100%;">
+            <p>So we decide to dig deeper and find what are the most common words that we find in negative reviews. We use 'nltk' to analyze reviews content and to produce a WordCloud with this kind of words.</p>
+            <img src = "Images\Projects\British Airways\wordcloud.png" style = "max-width: 80%;">
+            <p> As we can there is a presence of clause like 'cabin crew' or 'flight hour', so we could search more in depth about this kind of feature in flights to understand why people are not satisfied by British Airways flights.</p>
+          </div>
+        </div>
       </div>
+
+
+ 
+    
+      
     <script>
       function w3_open() {
         document.getElementById("mySidebar").style.display = "block";
